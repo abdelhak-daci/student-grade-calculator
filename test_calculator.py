@@ -21,3 +21,8 @@ def test_grade_categories():
     assert get_grade_category(13) == "Good"
     assert get_grade_category(10.5) == "Average"
     assert get_grade_category(7) == "Fail"
+
+
+def test_is_passing_exactly_10():
+    assert is_passing(10) is True
+
